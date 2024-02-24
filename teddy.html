@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ear1{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: black;
+        }
+        #ear2{
+            height: 150px;
+            width: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: black;
+        }
+        .ear{
+            display: flex;
+            justify-content:space-evenly
+        }
+        #face{
+            height: 450px;
+            width: 450px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-left: 405px;
+            margin-top: -115px;
+            
+        }
+        #eye1{
+            height: 100px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: azure;
+        }
+        #eye3{
+            height: 60px;
+            width: 40px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 37px;
+            background-color: black;
+        }
+        #eye2{
+            height: 100px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-color: azure;
+        }
+        #eye4{
+            height: 60px;
+            width: 40px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-left: 15px;
+            margin-top: 37px;
+            background-color: black;
+        }
+        .eye{
+            display: flex;
+            margin-top: 120px;
+            
+            justify-content: space-around;
+        }
+        #nose{
+            height: 50px;
+            width: 80px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 180px;
+            background-color: black;
+        }
+        #mouth{
+            height: 80px;
+            width: 150px;
+            margin-top: 10px;
+            margin-left: 150px;
+            border: 5px solid black;
+            border-radius: 50%;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+        #btns{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #btn, #btn1{
+            width: 100px;
+            height: 50px;
+            border: 2px solid black;
+            border-radius: 2rem;
+        }
+        #btn:hover, #btn1:hover{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="ear">
+        <div id="ear1"></div> 
+        <div id="ear2"></div> 
+    </div>
+    <div id="face">
+        <div class="eye">
+            <div id="eye1">
+                <div id="eye3"></div>
+            </div>
+            <div id="eye2">
+                <div id="eye4"></div>
+            </div>
+        </div>
+        <div id="nose"></div>
+        <div id="mouth"></div>
+    </div><br><br>
+    <div id="btns">
+        <button id="btn">teddy</button>
+        <button id="btn1">panda</button>
+    </div>
+    <script>
+        var a = document.getElementById("btn");
+        var b = document.getElementById("btn1");
+        a.addEventListener("click", () => {
+            document.getElementById("ear1").style.backgroundColor = "brown";
+            document.getElementById("ear2").style.backgroundColor = "brown";
+            document.getElementById("nose").style.backgroundColor = "brown";
+            document.getElementById("face").style.backgroundColor = "chocolate";
+        });
+        b.addEventListener("click", () => {
+            document.getElementById("ear1").style.backgroundColor = "black";
+            document.getElementById("ear2").style.backgroundColor = "black";
+            document.getElementById("nose").style.backgroundColor = "black";
+            document.getElementById("face").style.backgroundColor = "white";
+        })
+    </script>
+</body>
+</html>
